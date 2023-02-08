@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(arra1, arra2) {
-  if (arra1.toString() === arra2.toString()) {
+  if (JSON.stringify(arra1) === JSON.stringify(arra2)) {
     return true;
   } else {
     return false;
